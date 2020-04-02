@@ -9,15 +9,11 @@ namespace SlutProjekt
     
     class Antigen:Cell
     {
-        public override string Info(int cellType)
-        {
-            Dictionary<Cell, string> cellInfo = new Dictionary<Cell, string>();
-            cellInfo.Add(new PseudomonasAeruginosa(), "");
-            cellInfo.Add(new StaphylococcusAureus(), "");
-            cellInfo.Add(new InfluenzaA(), "");
-            cellInfo.Add(new InfluenzaB(), "");
+       
 
-            return cellInfo[new InfluenzaA()];
+        public override string Description()
+        {
+            return "A toxin or other foreign substance which induces an immune response in the body, especially the production of antibodies.";
         }
 
 

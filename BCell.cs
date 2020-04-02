@@ -8,12 +8,17 @@ namespace SlutProjekt
 {
     class BCell:ImmuneCell
     {
-        public override Dictionary<Cell, string> Info(int cellType)
+        public override List<string> Abilities() // maybe make these lists into dictionary<string, string>
         {
-            cellInfo.Add(new BCell(), "B-cells can differentiate into plasma cells—the body's antibody-producing factories. " +
+            List<string> abilityList = new List<string>() {"Antibodies"};
+            return abilityList;
+        }
+        public override string Description()
+        {
+            return "B-cells can differentiate into plasma cells—the body's antibody-producing factories. " +
                "Plasma cells produce large proteins called immunoglobulins, or antibodies that attach to the surface of foreign agents. " +
                "These antibodies serve as flags or the flares over a battle site." +
-               " They recruit other defensive molecules in the bloodstream to the site, working toward killing the infection-causing organism.");
+               " They recruit other defensive molecules in the bloodstream to the site, working toward killing the infection-causing organism.";
 
         }
     }

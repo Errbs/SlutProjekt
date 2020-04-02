@@ -8,9 +8,12 @@ namespace SlutProjekt
 {
     class CytotoxicTCell:ImmuneCell
     {
-        public override Dictionary<Cell, string> Info(int cellType)
+        public override string Description()
         {
-            cellInfo.Add(new CytotoxicTCell(), "Cytotoxic T-cells: Cytotoxic T-cells find and directly attack foreigners such as bacteria, viruses, and cancer cells.");
+            return "Cytotoxic T-cells: Cytotoxic T-cells find and directly attack foreigners such as bacteria, viruses, and cancer cells.";
         }
+       
+            
+       
     }
 }

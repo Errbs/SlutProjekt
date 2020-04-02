@@ -8,7 +8,11 @@ namespace SlutProjekt
 {
     class Neutrophil:ImmuneCell
     {
-        
+        public override List<string> Abilities()
+        {
+            List<string> abilityList = new List<string>() { "Phagocytosis", "Endocytosis" };
+            return abilityList;
+        }
         public override string Description()
         {
             return "Neutrophils are a type of white blood cell (WBC or granulocyte) that protect us from infections, among other functions." +
